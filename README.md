@@ -66,6 +66,10 @@ python main.py students.csv --only complete --out output/finishers.csv
 | `--timeout` | 15 | Per-request timeout (s) |
 | `--out` | none | Export to `.csv` or `.json` |
 
+An example on the sample CSV provided:
+<img width="959" height="560" alt="image" src="https://github.com/user-attachments/assets/45ff032b-bb05-4ce4-a69e-1b973bba7ac7" />
+
+
 ## CSV format
 ```csv
 Name,Google Skills Profile URL
