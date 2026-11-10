@@ -67,7 +67,8 @@ python main.py students.csv --only complete --out output/finishers.csv
 | `--out` | none | Export to `.csv` or `.json` |
 
 An example on the sample CSV provided:
-<img width="959" height="560" alt="image" src="https://github.com/user-attachments/assets/45ff032b-bb05-4ce4-a69e-1b973bba7ac7" />
+<img width="959" height="563" alt="image" src="https://github.com/user-attachments/assets/2c78b342-debc-4581-9468-aadf2d60f194" />
+
 
 
 ## CSV format
