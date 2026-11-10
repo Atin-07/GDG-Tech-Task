@@ -30,3 +30,7 @@ def test_not_found_and_invalid():
 
 def test_fetch_failure_becomes_status():
     assert run(FakeSession(*[FakeResp(429)] * 3)).status == m.RATE_LIMITED
+
+def test_403_is_private():
+    r = run(FakeSession(FakeResp(403)))
+    assert r.status == m.PRIVATE and "403" in r.detail

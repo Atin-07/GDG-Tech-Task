@@ -25,6 +25,8 @@ def check_profile(session, limiter, student, settings):
 
     if resp.status_code == 404:
         return Result(row, name, url, 0, NOT_FOUND, "HTTP 404")
+    if resp.status_code in (401, 403):
+        return Result(row, name, url, 0, PRIVATE, f"HTTP {resp.status_code}, profile is private or not accessible")
     if resp.status_code != 200:
         return Result(row, name, url, 0, PARSE_ERROR, f"unexpected HTTP {resp.status_code}")
 
